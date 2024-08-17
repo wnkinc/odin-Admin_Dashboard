@@ -1,0 +1,32 @@
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 8fr;
+    grid-template-areas: "sidebar header" "sidebar articles";
+}
+
+/* -------- SIDEBAR-TOP ---------- */
+.sidebar {
+    grid-area: sidebar;
+    background-color: aqua;
+}
+
+
+/* -------- SIDEBAR-BOTTOM ---------- */
+
+.header {
+    grid-area: header;
+    background-color: brown;
+}
+
+.articles {
+    grid-area: articles;
+    background-color: chartreuse;
+}
+
+svg {
+    width: 16px;
+    height: 16px;
+}
+
