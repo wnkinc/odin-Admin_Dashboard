@@ -26,25 +26,32 @@ svg {
     white-space: nowrap;
     line-height: 1.5;
 
-    background-color: aqua;
+    background-color: #0284c7;
 }
 
 .sidebar a {
     display: grid;
     grid-template-columns: 40px 1fr;
     gap: 10px;
+    color: #e0f2fe;
 }
 
 .dashboard {
     justify-self: center;
+    align-self: center;
 }
 
 .dashboard svg {
-    width: 20px;
+    width: 25px;
+    fill: #e0f2fe;
 }
 
 .dashboard.logo svg {
-    width: 30px;
+    width: 42px;
+}
+
+.dashboard-word {
+    font-size: 30px;
 }
 
 /* -------- SIDEBAR-BOTTOM ---------- */
