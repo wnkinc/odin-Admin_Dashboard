@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -6,12 +7,45 @@ body {
     grid-template-areas: "sidebar header" "sidebar articles";
 }
 
+a {
+    text-decoration: none;
+}  
+
+svg {
+    width: 20px;
+}
+
 /* -------- SIDEBAR-TOP ---------- */
 .sidebar {
     grid-area: sidebar;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 40px);
+    font-size: 24px;
+    padding: 20px;
+    white-space: nowrap;
+    line-height: 1.5;
+
     background-color: aqua;
 }
 
+.sidebar a {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 10px;
+}
+
+.dashboard {
+    justify-self: center;
+}
+
+.dashboard svg {
+    width: 20px;
+}
+
+.dashboard.logo svg {
+    width: 30px;
+}
 
 /* -------- SIDEBAR-BOTTOM ---------- */
 
@@ -24,9 +58,3 @@ body {
     grid-area: articles;
     background-color: chartreuse;
 }
-
-svg {
-    width: 16px;
-    height: 16px;
-}
-
