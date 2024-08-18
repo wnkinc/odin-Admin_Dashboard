@@ -182,6 +182,7 @@ button {
     font-size: 20px;
     font-weight: 500;
     padding: 10px 0;
+    margin-left: 20px;
 }
 
 .left {
@@ -193,6 +194,7 @@ button {
 
 .right {
     grid-area: body2;
+    display: grid;
 }
 
 .projects {
@@ -231,4 +233,71 @@ button {
 
 p {
     margin-top: 0;
+}
+
+.announcements {
+    display: grid;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-left: 20px;
+    font-size: 12px;
+    border: 1px solid transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Initial shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.trending {
+    margin-left: 20px;
+}
+
+.lineBelow {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+.lineBelow::before {
+    content: "";
+    position: absolute;
+    bottom: -15px; /* Align the line to the bottom */
+    left: 0; /* Align the line to the left */
+    width: 100%; /* Make the line span the full width of the container */
+    height: 2px; /* Set the height of the line */
+    background-color: #e5e7eb;
+}
+
+.titleA {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.trending {
+    font-size: 20px;
+    font-weight: 500;
+    align-self: end;
+    padding: 10px 0;
+}
+
+.inner {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.inner.last {
+    margin-bottom: 0;
+}
+
+.announce img{
+    width: 40px; /* Set the width */
+    height: 40px; /* Set the height to the same value as width */
+    border-radius: 50%; /* Make it a circle */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border: 2px solid #ddd; /* Optional: add a border */
+}
+
+.bleh {
+    color: #9e9e9f;
 }
